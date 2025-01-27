@@ -1,3 +1,29 @@
+# ros-humble-ros1-bridge for VILMA
+
+In `/etc/hosts`, add:
+
+```bash
+# [...] 
+
+192.168.140.4	VILMA-PC
+```
+
+Running bridge in VILMA Ubuntu 22.04 server:
+
+```bash
+source /opt/ros/humble/setup.bash
+source ros-humble-ros1-bridge/install/local_setup.bash 
+export ROS_MASTER_URI='http://VILMA-PC:11311' 
+
+ros2 run ros1_bridge dynamic_bridge
+# --show-introspection
+# --bridge-all-topics
+# --bridge-all-1to2-topics
+# --bridge-all-2to1-topics
+```
+
+---
+
 # ros-humble-ros1-bridge-builder
 Create a "*ros-humble-ros1-bridge*" package that can be used directly within Ubuntu 22.02 (Jammy) ROS2 Humble. Both amd64 and arm64 architectures are supported.
 
