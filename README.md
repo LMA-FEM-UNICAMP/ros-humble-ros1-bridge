@@ -23,6 +23,12 @@ ros2 run ros1_bridge dynamic_bridge
 # --bridge-all-2to1-topics
 ```
 
+A launch file was provided, permitting set the arguments in the python script and launch by other launch files:
+
+```
+ros2 launch ros_humble_ros1_bridge ros1_dynamic_bridge_launch.py
+```
+
 ---
 
 # ros-humble-ros1-bridge-builder
