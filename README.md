@@ -11,9 +11,10 @@ In `/etc/hosts`, add:
 Running bridge in VILMA Ubuntu 22.04 server:
 
 ```bash
-source /opt/ros/humble/setup.bash
-source ros-humble-ros1-bridge/install/local_setup.bash 
-export ROS_MASTER_URI='http://VILMA-PC:11311' 
+source /opt/ros/humble/setup.zsh
+source src/ros-humble-ros1-bridge/install/local_setup.zsh 
+export ROS_MASTER_URI='http://VILMA-PC:11311'
+export ROS_IP='192.168.140.XXX'
 
 ros2 run ros1_bridge dynamic_bridge
 # --show-introspection
