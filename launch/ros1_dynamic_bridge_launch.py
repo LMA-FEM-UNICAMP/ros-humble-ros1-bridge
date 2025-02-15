@@ -11,7 +11,7 @@ def generate_launch_description():
                                                               # '--print-pairs',
                                                               # '--show-introspection',
                                                               # '--bridge-all-topics',
-                                                              # '--bridge-all-1to2-topics',
+                                                              '--bridge-all-1to2-topics',
                                                               # '--bridge-all-2to1-topics'
                                                               ])
 
